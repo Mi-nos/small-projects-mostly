@@ -1,9 +1,3 @@
-﻿//ALGO2 IS1 210B LAB03
-//Maksymilian Grobicki - Madej
-//gm49261@zut.edu.pl
-
-
-#pragma once
 #include <iostream>
 #include <sstream>
 #include <string>
