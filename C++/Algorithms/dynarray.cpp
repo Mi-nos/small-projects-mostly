@@ -1,14 +1,9 @@
-//ALGO2 IS1 210B LAB02
-//Maksymilian Grobicki - Madej
-//gm49261@zut.edu.pl
-
-#pragma once
 #include <string>
 #include <sstream>
 #include <iostream>
 
 
-//pamiêæ wiêksza o x 2.0
+//pamiÃªÃ¦ wiÃªksza o x 2.0
 using namespace std;
 
 struct Box {
@@ -47,7 +42,7 @@ template <>
 bool comp(Box* t1, Box* t2) {
 	return t1->daneA < t2->daneA;
 }
-//nie chcia³o poprawnie sortowaæ bo by³ 'const'
+//nie chciaÂ³o poprawnie sortowaÃ¦ bo byÂ³ 'const'
 
 
 template <class T>
@@ -148,7 +143,7 @@ public:
 
 	}
 
-	void bubbleSort(bool (*cmp)(T t1, T t2)) { //wskaŸnik na komparator jako argument
+	void bubbleSort(bool (*cmp)(T t1, T t2)) { //wskaÅ¸nik na komparator jako argument
 
 		bool flag;
 		for (int i = 0; i < size - 1; i++) {
@@ -227,7 +222,7 @@ int main313()
 	boxes->bubbleSort(comp);
 	auto t2 = std::chrono::high_resolution_clock::now();
 	auto finalTime = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1);
-	cout << "Czas trwania sortowania b¹belkowego: " << finalTime.count() << " mikrosekund" << endl;
+	cout << "Czas trwania sortowania bÂ¹belkowego: " << finalTime.count() << " mikrosekund" << endl;
 	cout << boxes->toString(999) << endl;
 	auto box = boxes->dataAt(0);
 	cout << *box << endl;
