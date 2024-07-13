@@ -1,0 +1,27 @@
+Celem ćwiczeń jest zapoznanie się z podstawową funkcjonalnością języka PYTHON i biblioteki FOLIUM, która ułatwia kreowanie map dynamicznych ze źródeł plikowych i baz danych.
+
+Zadanie 
+
+Ocena dostateczna:
+Na podstawie points.csv dokonaj geokodowania (reverse geocoding), za pomocą wybranego serwera. Zwróć dane do tabeli w układzie X | Y| zgeokodowany adres
+Zwizualizuj punkty na mapie w aplikacji folium
+
+Ocena dobra: 
+Na podstawie informacj zawartych w pliku "lab3_folium_analiza_danych.ipynb", stwórz mapę pandemii koronawirusa na świecie (https://ourworldindata.org/coronavirus-source-data). 
+
+Dane: A) country.gejson - mapa świata, gdzie: GMI_CNTRY = kod kraju
+
+B) ovid-covid-data.csv, gdzie iso-code = kod kraju
+
+Podstawowa funkcjonalność którą powinna posiadać wykonana mapa: 
+
+mapa tematyczna z wizualizacją skali kolorów (metoda bins) 
+kontrola warstw 
+skala 
+legenda
+Mapa może mieć postać pliku HTML, wygenerowanego z folium lub kodu źródłowego "python".
+
+Mapa tematyczna ma różnicować kolorem dane z wybranego dnia pandemii dla danego kraju (data w pliku covid...). Proszę wykorzystać funkcję quantile do wyświetlenia danych.
+
+Ocena bardzo dobra: 
+wykonanie mapy dynamicznej z wykorzystaniem funkcji: TimestampedGeoJson Mapa powinna wyświetlać dane w odstępach dziennych od pierwszego notowania do dnia 04.03.2022. Zmieniać mają sie kolory polygnów. Po najechaniu kursorem powinna wyświetlać się etykieta  z informacją o danych z pokazywanego dnia.
